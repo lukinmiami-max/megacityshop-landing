@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Политика конфиденциальности — МегаСитиШоп</title>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Nunito:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+img { max-width: 100%; height: auto; display: block; }
+
+:root {
+  --teal:       #2ABFC0;
+  --teal-dark:  #1A9EA0;
+  --bg:         #ffffff;
+  --bg-2:       #F4F8FA;
+  --ink:        #0A141E;
+  --ink-2:      #1E2E3D;
+  --muted:      #5E7A8F;
+  --border:     rgba(42,191,192,0.2);
+  --border-2:   rgba(0,0,0,0.08);
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'Nunito', sans-serif;
+  background: var(--bg);
+  color: var(--ink);
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: var(--bg-2); }
+::-webkit-scrollbar-thumb { background: var(--teal); border-radius: 2px; }
+
+/* NAV */
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 60px;
+  background: rgba(255,255,255,0.95);
+  backdrop-filter: blur(16px);
+  border-bottom: 1px solid var(--border-2);
+}
+
+.nav-logo { display: flex; align-items: center; text-decoration: none; }
+.nav-logo img { height: 48px; width: auto; }
+
+.nav-back {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--muted);
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  transition: color 0.2s;
+}
+.nav-back:hover { color: var(--teal); }
+.nav-back svg { flex-shrink: 0; }
+
+/* CONTENT */
+.page-wrap {
+  max-width: 780px;
+  margin: 0 auto;
+  padding: 64px 40px 96px;
+}
+
+.page-label {
+  font-family: 'Oswald', sans-serif;
+  font-size: 11px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--teal);
+  margin-bottom: 16px;
+}
+
+.page-title {
+  font-family: 'Oswald', sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  color: var(--ink);
+  line-height: 1.2;
+  margin-bottom: 8px;
+}
+
+.page-meta {
+  font-size: 14px;
+  color: var(--muted);
+  margin-bottom: 48px;
+  padding-bottom: 32px;
+  border-bottom: 1px solid var(--border-2);
+}
+
+.policy-section {
+  margin-bottom: 40px;
+}
+
+.policy-section h2 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--ink);
+  margin-bottom: 16px;
+  padding-left: 12px;
+  border-left: 3px solid var(--teal);
+}
+
+.policy-section p {
+  font-size: 15px;
+  line-height: 1.75;
+  color: var(--ink-2);
+  margin-bottom: 10px;
+}
+
+.policy-section ul {
+  margin: 8px 0 10px 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.policy-section ul li {
+  font-size: 15px;
+  line-height: 1.75;
+  color: var(--ink-2);
+  padding-left: 16px;
+  position: relative;
+  margin-bottom: 4px;
+}
+
+.policy-section ul li::before {
+  content: '—';
+  position: absolute;
+  left: 0;
+  color: var(--teal);
+}
+
+.policy-section a {
+  color: var(--teal);
+  text-decoration: none;
+}
+.policy-section a:hover { text-decoration: underline; }
+
+/* FOOTER */
+footer {
+  background: var(--bg-2);
+  border-top: 1px solid var(--border-2);
+  padding: 32px 60px;
+}
+
+.footer-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.footer-logo img { height: 32px; }
+
+.footer-copy {
+  font-size: 13px;
+  color: var(--muted);
+}
+
+.footer-links {
+  display: flex;
+  gap: 24px;
+}
+
+.footer-links a {
+  font-size: 13px;
+  color: var(--muted);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.footer-links a:hover { color: var(--teal); }
+
+@media (max-width: 768px) {
+  nav { padding: 14px 20px; }
+  .page-wrap { padding: 40px 20px 64px; }
+  .page-title { font-size: 28px; }
+  footer { padding: 24px 20px; }
+  .footer-inner { flex-direction: column; align-items: flex-start; gap: 12px; }
+  .footer-links { flex-wrap: wrap; gap: 16px; }
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="nav-logo">
+    <img src="logo_transparent.png" alt="МегаСитиШоп">
+  </a>
+  <a href="index.html" class="nav-back">
+    <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7"/>
+    </svg>
+    Вернуться на главную
+  </a>
+</nav>
+
+<div class="page-wrap">
+  <div class="page-label">Документы</div>
+  <h1 class="page-title">Политика конфиденциальности</h1>
+  <p class="page-meta">Сайт megacityshop.ru &nbsp;·&nbsp; ИП Козловский А.В.</p>
+
+  <p style="font-size:15px;line-height:1.75;color:var(--ink-2);margin-bottom:40px;">
+    Настоящая Политика конфиденциальности (далее — Политика) определяет порядок обработки и защиты персональных данных пользователей сайта https://megacityshop.ru (далее — Сайт), осуществляемую ИП Козловский А.В. (далее — Оператор), в соответствии с требованиями Федерального закона №152-ФЗ «О персональных данных».
+  </p>
+
+  <div class="policy-section">
+    <h2>1. Общие положения</h2>
+    <p>1.1. Настоящая Политика разработана в целях соблюдения требований законодательства Российской Федерации в области защиты персональных данных и действует в отношении всей информации, которую Оператор может получить о пользователях Сайта.</p>
+    <p>1.2. Использование Сайта означает безусловное согласие пользователя с настоящей Политикой и условиями обработки персональных данных.</p>
+    <p>1.3. В случае несогласия с условиями Политики пользователь должен прекратить использование Сайта.</p>
+  </div>
+
+  <div class="policy-section">
+    <h2>2. Персональные данные, которые обрабатываются</h2>
+    <p>2.1. К персональным данным, которые может собирать и обрабатывать Оператор, относятся:</p>
+    <ul>
+      <li>фамилия, имя, отчество;</li>
+      <li>адрес электронной почты;</li>
+      <li>номер телефона;</li>
+      <li>адрес доставки;</li>
+      <li>сведения о заказах и предпочтениях пользователя;</li>
+      <li>IP-адрес, cookie-файлы, данные об устройстве и браузере.</li>
+    </ul>
+    <p>2.2. Оператор не собирает и не обрабатывает специальные категории персональных данных (о здоровье, политических взглядах, религии и т.д.).</p>
+  </div>
+
+  <div class="policy-section">
+    <h2>3. Цели обработки персональных данных</h2>
+    <p>3.1. Персональные данные пользователей обрабатываются для следующих целей:</p>
+    <ul>
+      <li>регистрации пользователя на Сайте и обеспечения доступа к сервисам;</li>
+      <li>выполнения обязательств по договорам купли-продажи и доставки товара;</li>
+      <li>обработки обращений и обратной связи;</li>
+      <li>отправки уведомлений, новостей, рекламных материалов при наличии согласия пользователя;</li>
+      <li>улучшения качества работы Сайта и пользовательского опыта.</li>
+    </ul>
+  </div>
+
+  <div class="policy-section">
+    <h2>4. Правовые основания обработки</h2>
+    <p>4.1. Обработка персональных данных осуществляется на следующих правовых основаниях:</p>
+    <ul>
+      <li>согласие субъекта персональных данных;</li>
+      <li>исполнение договора или обязательств перед пользователем;</li>
+      <li>выполнение обязанностей, установленных законодательством РФ;</li>
+      <li>реализация законных интересов Оператора при условии, что права пользователя не нарушаются.</li>
+    </ul>
+  </div>
+
+  <div class="policy-section">
+    <h2>5. Сроки хранения и уничтожение персональных данных</h2>
+    <p>5.1. Персональные данные хранятся в форме, позволяющей определить субъекта персональных данных, не дольше, чем этого требуют цели обработки.</p>
+    <p>5.2. Персональные данные удаляются по истечении 5 лет с момента последнего взаимодействия пользователя с Сайтом или по письменному требованию субъекта данных.</p>
+  </div>
+
+  <div class="policy-section">
+    <h2>6. Порядок получения согласия</h2>
+    <p>6.1. Пользователь выражает согласие на обработку персональных данных посредством проставления отметки (чекбокса) в формах Сайта до их отправки.</p>
+    <p>6.2. Согласие может быть отозвано пользователем в любое время путем направления уведомления на электронную почту Оператора: <a href="mailto:sale@megacityshop.ru">sale@megacityshop.ru</a>.</p>
+    <p>6.3. В случае отзыва согласия обработка прекращается, а данные подлежат удалению в течение 30 календарных дней.</p>
+  </div>
+
+  <div class="policy-section">
+    <h2>7. Передача персональных данных третьим лицам</h2>
+    <p>7.1. Оператор может передавать персональные данные третьим лицам исключительно для целей исполнения обязательств (службы доставки, платежные системы, CRM и т.п.).</p>
+    <p>7.2. Передача осуществляется при условии соблюдения этими лицами конфиденциальности и требований законодательства РФ.</p>
+    <p>7.3. Перечень третьих лиц: Яндекс.Метрика, Google Analytics, сервис email-рассылок, курьерские службы.</p>
+  </div>
+
+  <div class="policy-section">
+    <h2>8. Cookie-файлы</h2>
+    <p>8.1. Сайт использует cookie-файлы для персонализации сервисов, анализа трафика и улучшения функциональности.</p>
+    <p>8.2. Пользователь может изменить настройки cookie в своем браузере, включая блокировку файлов cookie.</p>
+    <p>8.3. Использование Сайта без изменения настроек браузера означает согласие на использование cookie.</p>
+  </div>
+
+  <div class="policy-section">
+    <h2>9. Меры по защите персональных данных</h2>
+    <p>9.1. Оператор принимает необходимые организационные и технические меры для защиты персональных данных от неправомерного доступа, уничтожения, изменения, блокирования и распространения.</p>
+    <p>9.2. В числе таких мер: использование SSL-сертификатов, контроль доступа, резервное копирование данных и антивирусная защита.</p>
+  </div>
+
+  <div class="policy-section">
+    <h2>10. Права субъектов персональных данных</h2>
+    <p>10.1. Пользователь имеет право:</p>
+    <ul>
+      <li>получать сведения об обработке своих персональных данных;</li>
+      <li>требовать уточнения, блокирования или уничтожения данных;</li>
+      <li>отзывать согласие на обработку;</li>
+      <li>обжаловать действия Оператора в Роскомнадзор или суде.</li>
+    </ul>
+    <p>10.2. Для реализации прав пользователь может направить запрос на email: <a href="mailto:sale@megacityshop.ru">sale@megacityshop.ru</a>.</p>
+  </div>
+
+  <div class="policy-section">
+    <h2>11. Уведомление Роскомнадзора</h2>
+    <p>11.1. Оператор зарегистрирован в реестре операторов персональных данных Роскомнадзора.</p>
+    <p>11.2. Информация о регистрации доступна по запросу субъекта данных.</p>
+  </div>
+
+  <div class="policy-section">
+    <h2>12. Заключительные положения</h2>
+    <p>12.1. Настоящая Политика подлежит актуализации при изменении законодательства РФ.</p>
+    <p>12.2. Новая редакция Политики вступает в силу с момента ее публикации на Сайте.</p>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <a href="index.html" class="footer-logo">
+      <img src="logo_transparent.png" alt="МегаСитиШоп">
+    </a>
+    <div class="footer-copy">© 2026 МегаСитиШоп. Мебель и оборудование для образования.</div>
+    <div class="footer-links">
+      <a href="privacy.html">Конфиденциальность</a>
+      <a href="index.html#form">Контакты</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
